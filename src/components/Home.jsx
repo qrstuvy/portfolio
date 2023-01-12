@@ -1,7 +1,20 @@
+import Sparkle from 'react-sparkle'
+
 export default function Home({ isNightMode }){
     return(
         <>
         <div className='banner-title'>
+        <Sparkle
+  color={'#FFFFFF'}
+  className="sparkle"
+  fadeOutSpeed={0}
+  newSparkleOnFadeOut={false}
+  count={50}
+  minSize={5}
+  maxSize={8}
+  flicker={true}
+  flickerSpeed={'slowest'}
+/>
         <h1 className=
         {
         isNightMode ? 
