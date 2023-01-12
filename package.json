@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-
+  "main": "index.html",
   "private": true,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
@@ -20,7 +20,7 @@
   },
   "scripts": {
 
-    "start": "react-scripts start",
+    "start": "node index.html",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
