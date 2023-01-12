@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.e909dec4.css",
-    "main.js": "/react-gh-pages/static/js/main.760f7d0f.js",
-    "static/media/profilepic.png": "/react-gh-pages/static/media/profilepic.f6264641b5bbb2e88dee.png",
-    "static/media/1.png": "/react-gh-pages/static/media/1.b1351e7761047b3505b5.png",
-    "static/media/2.png": "/react-gh-pages/static/media/2.0a12129f12d40330cce2.png",
-    "index.html": "/react-gh-pages/index.html",
-    "static/media/cloud.svg": "/react-gh-pages/static/media/cloud.1cd17ceecd4dc879efbc.svg",
-    "main.e909dec4.css.map": "/react-gh-pages/static/css/main.e909dec4.css.map",
-    "main.760f7d0f.js.map": "/react-gh-pages/static/js/main.760f7d0f.js.map"
+    "main.css": "/portfolio/static/css/main.d985e678.css",
+    "main.js": "/portfolio/static/js/main.e07057a2.js",
+    "static/media/profilepic.png": "/portfolio/static/media/profilepic.f6264641b5bbb2e88dee.png",
+    "static/media/1.png": "/portfolio/static/media/1.b1351e7761047b3505b5.png",
+    "static/media/2.png": "/portfolio/static/media/2.0a12129f12d40330cce2.png",
+    "index.html": "/portfolio/index.html",
+    "static/media/cloud.svg": "/portfolio/static/media/cloud.1cd17ceecd4dc879efbc.svg",
+    "main.d985e678.css.map": "/portfolio/static/css/main.d985e678.css.map",
+    "main.e07057a2.js.map": "/portfolio/static/js/main.e07057a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.e909dec4.css",
-    "static/js/main.760f7d0f.js"
+    "static/css/main.d985e678.css",
+    "static/js/main.e07057a2.js"
   ]
 }
