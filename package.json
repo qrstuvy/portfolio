@@ -1,6 +1,9 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "engines": {
+    "node": "19.0.0"
+    },
   "homepage": "https://qrstuvy.github.io/portfolio",
   "private": true,
   "dependencies": {
