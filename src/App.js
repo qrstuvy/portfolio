@@ -9,6 +9,7 @@ import SectionDivider from './components/SectionDivider'
 import BannerBackground from './components/BannerBackground'
 import { ParallaxProvider } from "react-scroll-parallax"
 import React, { useState } from 'react'
+import Sparkle from 'react-sparkle'
 
 function App() {
   const [isNightMode, setIsNightMode] = useState(false);
@@ -41,6 +42,17 @@ className="night-mode-button-off" onClick={handleNightModeClick}
 </svg>
 }
       <div className={`App ${isNightMode ? 'night-mode' : ''}`}>
+      <Sparkle
+  color={'#FFFFFF'}
+  className="sparkle"
+  fadeOutSpeed={0}
+  newSparkleOnFadeOut={false}
+  count={50}
+  minSize={5}
+  maxSize={8}
+  flicker={true}
+  flickerSpeed={'slowest'}
+/>
         <ParallaxProvider>
           <BannerBackground isNightMode={isNightMode}/>
         </ParallaxProvider>
