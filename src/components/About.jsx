@@ -5,7 +5,7 @@ export default function About () {
         <>
             <h2>About Me</h2>
             <div className='about-me-div'>
-               <img src={profilepic} class="profilepic" /> 
+               <img src={profilepic} className="profilepic" /> 
                 <div className='about-me-desc'>
                     <p>Hi! I'm Vy!
                     <br /><br />

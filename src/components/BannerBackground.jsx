@@ -103,7 +103,7 @@ export default function BannerBackground ({ isNightMode }) {
   flickerSpeed={'slowest'}
 />
           <ParallaxBannerLayer
-          class="main-parallax"
+          className="main-parallax"
           image={layer1}
           translateY={[2, -100]}
           expanded={false}
