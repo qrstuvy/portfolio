@@ -54,6 +54,7 @@
 }
 
 .banner {
+  position: relative;
   height: 100vh;
   padding: auto;
 }
