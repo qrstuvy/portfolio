@@ -5,7 +5,7 @@ import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import sun from '../images/sun.png'
 import moon from '../images/moon.png'
 import layer1 from '../images/1.png'
-// import Sparkle from 'react-sparkle'
+import Sparkle from 'react-sparkle'
 
 
 export default function BannerBackground ({ isNightMode }) {
@@ -91,7 +91,7 @@ export default function BannerBackground ({ isNightMode }) {
           shouldAlwaysCompleteAnimation={true}
         />
 
-{/* <Sparkle
+<Sparkle
   color={'#FFFFFF'}
   className="sparkle"
   fadeOutSpeed={0}
@@ -101,7 +101,7 @@ export default function BannerBackground ({ isNightMode }) {
   maxSize={8}
   flicker={true}
   flickerSpeed={'slowest'}
-/> */}
+/>
           <ParallaxBannerLayer
           class="main-parallax"
           image={layer1}
