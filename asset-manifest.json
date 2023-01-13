@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.a9a3a600.css",
-    "main.js": "/portfolio/static/js/main.d2ce4372.js",
+    "main.css": "/portfolio/static/css/main.d5bf9744.css",
+    "main.js": "/portfolio/static/js/main.f0584da8.js",
     "static/media/profilepic.png": "/portfolio/static/media/profilepic.f6264641b5bbb2e88dee.png",
+    "static/media/simon-things-1.png": "/portfolio/static/media/simon-things-1.65733218a5ff25804281.png",
+    "static/media/astrologyx-1.png": "/portfolio/static/media/astrologyx-1.2d2fefcaa556938ca7be.png",
     "static/media/1.png": "/portfolio/static/media/1.b1351e7761047b3505b5.png",
+    "static/media/medtracker-1.png": "/portfolio/static/media/medtracker-1.e2057e0fb9d5b67c887c.png",
     "static/media/2.png": "/portfolio/static/media/2.0a12129f12d40330cce2.png",
+    "static/media/linkcable-1.png": "/portfolio/static/media/linkcable-1.a498ef30bf084bf40e49.png",
     "index.html": "/portfolio/index.html",
     "static/media/cloud.svg": "/portfolio/static/media/cloud.1cd17ceecd4dc879efbc.svg",
-    "main.a9a3a600.css.map": "/portfolio/static/css/main.a9a3a600.css.map",
-    "main.d2ce4372.js.map": "/portfolio/static/js/main.d2ce4372.js.map"
+    "main.d5bf9744.css.map": "/portfolio/static/css/main.d5bf9744.css.map",
+    "main.f0584da8.js.map": "/portfolio/static/js/main.f0584da8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9a3a600.css",
-    "static/js/main.d2ce4372.js"
+    "static/css/main.d5bf9744.css",
+    "static/js/main.f0584da8.js"
   ]
 }
