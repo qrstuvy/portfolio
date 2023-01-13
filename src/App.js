@@ -1,14 +1,16 @@
+import React, { useState, useRef } from 'react'
 import './index.css';
-import NavBar from './components/Navbar';
-import Home from './components/Home';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Footer from './components/Footer';
-import SectionDivider from './components/SectionDivider'
 import BannerBackground from './components/BannerBackground'
 import { ParallaxProvider } from "react-scroll-parallax"
-import React, { useState, useRef } from 'react'
+import NavBar from './components/Navbar'
+import Home from './components/Home'
+import About from './components/About'
+import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
+import SectionDivider from './components/SectionDivider'
+
 
 export default function App() {
   const [isNightMode, setIsNightMode] = useState(false);
@@ -76,6 +78,10 @@ className="night-mode-button-off" onClick={handleNightModeClick}
           </div>
           <Projects />
 
+          <div className='divider-div' ref={contact}>
+          <SectionDivider />
+          </div>
+          <Contact />
 
         </main>
       </div>
