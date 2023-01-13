@@ -243,15 +243,27 @@ a:hover{
 .nav-icon {
   margin-left: 10px;
   font-size: 1.3rem;
-  
   transition: transform 0.2s ease-in-out;
-  /* filter: drop-shadow(0 0 5px #555454); */
 }
 
 .nav-icon:hover {
   transform: translateY(-5px);
   color: #5ad0b8;
 }
+
+.skills-icon-name {
+  visibility: hidden;
+  font-size: 1rem;
+  margin-top: -5px;
+  font-family: sans-serif;
+}
+
+.skills-icon:hover .skills-icon-name {
+  visibility: visible;
+  color: white;
+  text-shadow: 0 0 10px #35427e;
+}
+
 
 .bottom-div {
   position: fixed; 
@@ -436,13 +448,13 @@ a:hover{
   }
 
   @media screen and (max-width: 600px) {
-    .top-navbar {
+    /* .top-navbar {
       visibility: hidden;
      }
 
      .top-navbar-darkmode {
       visibility: hidden;
-     }
+     } */
   
      .nav-icon-div { 
       padding-left: 120px;
@@ -452,6 +464,7 @@ a:hover{
       display: flex;
       flex-direction: row;
       height: 60px;
+      z-index: 600;
     }
   
     .nav-icon-div-darkmode { 
@@ -462,6 +475,7 @@ a:hover{
       display: flex;
       flex-direction: row;
       height: 60px;
+      z-index: 600;
     }
 
     .nav-icon {
@@ -498,14 +512,14 @@ a:hover{
   .skills-h2 {
     margin-top: 100px;
    }
-
+/* 
    .top-navbar {
     visibility: hidden;
    }
 
    .top-navbar-darkmode {
     visibility: hidden;
-   }
+   } */
 
    .nav-icon-div { 
     padding-left: 30px;
@@ -515,6 +529,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     height: 60px;
+    z-index: 600;
   }
 
   .nav-icon-div-darkmode { 
@@ -525,6 +540,7 @@ a:hover{
     display: flex;
     flex-direction: row;
     height: 60px;
+    z-index: 600;
   }
 
   .nav-icon {
@@ -592,11 +608,13 @@ a:hover{
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  z-index: 100;
+  width: 70%
 }
 
 .project-div h2 {
   color: white;
-  text-shadow: 1px 1px 1px #3b4093;
+  text-shadow: 1px 1px 1px #327a93;
 }
 
 .project-div h3 {
@@ -604,8 +622,8 @@ a:hover{
 }
 
 .image-div {
-  width: 445px;
-  height: 350px;
+  width: 300px;
+  height: 200px;
   border-radius: 10px;
   border-bottom: 1px solid #a4eaf6;
   box-shadow: 1px 1px 10px #327a93;
@@ -613,18 +631,18 @@ a:hover{
 
 .image-div img {
   position: relative;
-  width: 445px;
-  height: 350px;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
-}
+} 
 
 .description {
   color: #327a93;
   text-align: center;
-  background-image: linear-gradient(#5cd4e9, #f6eee1);
-  /* padding: 0 200px 25px 15px; */
-  padding: 5px;
+  background-image: linear-gradient(#a4eaf6, #f6eee1);
+  padding: 0 15px 25px 15px;
+  margin: 10px;
   box-shadow: 1px 1px 8px #327a93;
   border-radius: 10px;
   border-top: 1px solid #fefde5;
