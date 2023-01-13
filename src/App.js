@@ -8,13 +8,26 @@ import Footer from './components/Footer';
 import SectionDivider from './components/SectionDivider'
 import BannerBackground from './components/BannerBackground'
 import { ParallaxProvider } from "react-scroll-parallax"
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 
-function App() {
+export default function App() {
   const [isNightMode, setIsNightMode] = useState(false);
+  const ref = useRef(null);
 
   const handleNightModeClick = () => {
     setIsNightMode(!isNightMode);
+  }
+
+  const skills = useRef(null)
+  const about = useRef(null)
+  const projects = useRef(null)
+  const contact = useRef(null)
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth',
+    })
   }
 
   return (
@@ -44,20 +57,29 @@ className="night-mode-button-off" onClick={handleNightModeClick}
         <ParallaxProvider>
           <BannerBackground isNightMode={isNightMode}/>
         </ParallaxProvider>
-        <NavBar isNightMode={isNightMode}/>
+        <NavBar scrollToSection={scrollToSection} skills={skills} about={about} projects={projects} contact={contact} isNightMode={isNightMode}/>
         <Home isNightMode={isNightMode}/>
+
         <main>
-        <SectionDivider />
+        <div className='divider-div' ref={about}>
+          <SectionDivider />
+          </div>
+          <About isNightMode={isNightMode} />
+
+        <div className='divider-div' ref={skills}>
+          <SectionDivider />
+          </div>
           <Skills />
+          
+          <div className='divider-div' ref={projects}>
           <SectionDivider />
-          <About isNightMode={isNightMode}/>
-          <SectionDivider />
+          </div>
           <Projects />
+
+
         </main>
       </div>
       <Footer />
     </>
   );
 }
-
-export default App;

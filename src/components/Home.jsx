@@ -24,7 +24,7 @@ export default function Home({ isNightMode }){
         }>
         Vy Nguyen</h1>
         <h2 className='banner-h2'>Full-Stack Developer</h2>
-        <h3 className="banner-h3">"Dream higher than the sky and deeper than the ocean."</h3>
+        <h3 className="banner-h3">"Dream higher than the <span className="sky">sky</span> and deeper than the <span className="ocean">ocean</span>."</h3>
         </div>
         </>
     )

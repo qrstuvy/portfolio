@@ -2,22 +2,36 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import '../index.css'
 import ScrollToTop from './ScrollToTop'
+import { useState, useEffect } from 'react'
 
-export default function NavBar({ isNightMode }){
-    return (
+
+export default function NavBar({ scrollToSection, skills, about, projects, contact, isNightMode }){
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+  const handleScroll = () => {
+    if (window.pageYOffset > 600) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+  
+  
+  return (
       <>
-      <nav className=
-       {
-          isNightMode ? 
-          "top-navbar-darkmode"
-          :
-        "top-navbar"
-       }>
+ <nav className={scrolled ? "top-navbar scrolled" : isNightMode ? "top-navbar-darkmode" : "top-navbar"}>
           <ul>
-            <li><a href="">about.</a></li>
-            <li><a href="">skills.</a></li>
-            <li><a href="">projects.</a></li>
-            <li><a href="">contact.</a></li>
+            <li><a onClick={() => scrollToSection(about)}>about.</a></li>
+            <li><a onClick={() => scrollToSection(skills)}>skills.</a></li>
+            <li><a onClick={() => scrollToSection(projects)}>projects.</a></li>
+            <li><a onClick={() => scrollToSection(contact)}>contact.</a></li>
           </ul>
         </nav>
 

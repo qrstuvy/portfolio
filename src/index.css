@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
 }
 
+.sky, .ocean {
+  color: #a4eaf6;
+}
+
 .banner-h1 {
   font-family: 'League Spartan', sans-serif;
   font-size: 5rem;
@@ -24,7 +28,7 @@
   font-size: 5rem;
   margin-top: 15px;
   text-align: center;
-  color: #b3d5f3;
+  color: #a4eaf6;
   text-shadow: 0 0 10px #091c23;
   z-index: 1;
 }
@@ -75,8 +79,11 @@
   background-attachment: fixed;
 }
 
+.divider-div {
+  z-index: 1;
+}
+
 .divider {
-  z-index: 100;
   color: #327a93;
   padding: 50px 0;
 }
@@ -102,6 +109,7 @@ body {
 
 h2, p{
   color: #327a93;
+  z-index: 1;
 }
 /* NavBar component */
 
@@ -113,7 +121,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0px;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
     width: 100%;
 }
 
@@ -130,16 +138,16 @@ li {
 
 .night-mode-button-on {
   color: #ffff9b;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   position: absolute;
-  z-index: 100;
+  z-index: 500;
 }
 
 .night-mode-button-off {
   color: #327a93;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   position: absolute;
-  z-index: 100;
+  z-index: 500;
 }
 
 .top-navbar {
@@ -152,6 +160,11 @@ li {
   top: 0;
   right: 0;
   padding-right: 10px;
+  z-index: 400;
+}
+
+.scrolled {
+  background:rgba(255, 255, 255, 0.5);
 }
 
 .top-navbar a {
@@ -274,7 +287,7 @@ a:hover{
 
 .skills-div {
   text-align: center;
-  width: 80%;
+  width: 60%;
   color: white;
   display: flex;
   justify-content: space-evenly;
@@ -359,8 +372,11 @@ a:hover{
   height: 200px;
   border-radius: 50%;
   z-index: 1;
+  border: 1px solid white;
+  box-shadow: 1px 1px 20px #ffffff;
+  border-radius: 50%;
+  object-fit: cover;
 }
-
 
 .about-me-div {
   display: flex;
@@ -373,7 +389,7 @@ a:hover{
 
 .about-me-desc {
   color: #327a93;
-  width: 75%;
+  width: 80%;
   font-size: 1.5rem;
 }
 
@@ -420,16 +436,64 @@ a:hover{
   }
 
   @media screen and (max-width: 600px) {
+    .top-navbar {
+      visibility: hidden;
+     }
 
+     .top-navbar-darkmode {
+      visibility: hidden;
+     }
+  
+     .nav-icon-div { 
+      padding-left: 120px;
+      background-color: rgba(255, 255, 255, 0.5);
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      height: 60px;
+    }
+  
+    .nav-icon-div-darkmode { 
+      padding-left: 120px;
+      background-color: rgba(255, 255, 255, 0.5);
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      height: 60px;
+    }
+
+    .nav-icon {
+      font-size: 1.5rem;
+      color: #327a93;
+      margin: 0 13px;
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    .nav-icon:hover {
+      transform: translateY(-5px);
+      color: #5ad0b8;
+    }
+
+    .top-icon {
+    font-size: 2.5rem;
+    transition-duration: 0.3s;
+    height: 135px;
+    padding: 5px;
+    color: rgba(50, 122, 147, 0.7);
+    animation: fade-in 0.3s;
+  }
+
+  .about-me-desc {
+    color: #327a93;
+    width: 80%;
+    font-size: 1.5rem;
+  }
 
   } 
 
   @media screen and (max-width: 390px) {
-
-    .divider {
-      z-index: 100;
-      color: #327a93;
-    }
 
   .skills-h2 {
     margin-top: 100px;
@@ -479,7 +543,7 @@ a:hover{
     font-size: 2.5rem;
     transition-duration: 0.3s;
     height: 135px;
-    padding: 5px;
+    margin-left: -85px;
     color: rgba(50, 122, 147, 0.7);
     animation: fade-in 0.3s;
   }
@@ -488,6 +552,13 @@ a:hover{
     filter: drop-shadow(0 0 10px #ffffff);
     color: rgba(255, 255, 255, 0.7);
   }
+
+  .about-me-desc {
+    color: #327a93;
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  
 
 }
 
@@ -502,14 +573,90 @@ a:hover{
 }
 
 
-@keyframes change-background {
-  0% {
-    background: linear-gradient(to bottom,#a4eaf6, #f6eee1, #a4eaf6);
-  }
-  50% {
-    background: linear-gradient(to bottom,#82c1cc, #f8e2bf, #a4eaf6);
-  }
-  100% {
-    background: linear-gradient(to bottom,#2a3551, #786b59, #a4eaf6);
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.project-div h2 {
+  color: white;
+  text-shadow: 1px 1px 1px #3b4093;
+}
+
+.project-div h3 {
+  margin-top: -20px;
+}
+
+.image-div {
+  width: 445px;
+  height: 350px;
+  border-radius: 10px;
+  border-bottom: 1px solid #a4eaf6;
+  box-shadow: 1px 1px 10px #327a93;
+}
+
+.image-div img {
+  position: relative;
+  width: 445px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.description {
+  color: #327a93;
+  text-align: center;
+  background-image: linear-gradient(#5cd4e9, #f6eee1);
+  /* padding: 0 200px 25px 15px; */
+  padding: 5px;
+  box-shadow: 1px 1px 8px #327a93;
+  border-radius: 10px;
+  border-top: 1px solid #fefde5;
+  border-bottom: 1px solid #327a93;
+
+}
+
+.project-icon {
+  font-size: 2.2rem;
+}
+
+.project-div button {
+  padding: 6px 10px;
+  font-size: 1.1rem;
+  color: #327a93;
+  margin: 0 7px;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #327a93;
+}
+
+.project-div button:hover {
+  background-color: #327a93;
+  color: white;
+  box-shadow: 0 0 5px white;
+  transition-duration: 0.3s;
+}
+
+.project-div button:active,
+.contact-me-form button:active {
+  transform: translate(2px, 2px);
+  transition-duration: 0.1s;
+  box-shadow: none;
 }

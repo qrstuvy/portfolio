@@ -11,6 +11,7 @@ import Sparkle from 'react-sparkle'
 export default function BannerBackground ({ isNightMode }) {
   const [showIcon, setShowIcon] = useState(true)
 
+
   const handleScroll = () => {
     if (window.pageYOffset >= 100) {
       setShowIcon(false)
@@ -18,6 +19,7 @@ export default function BannerBackground ({ isNightMode }) {
       setShowIcon(true)
     }
   }
+
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -79,7 +81,7 @@ export default function BannerBackground ({ isNightMode }) {
           <ParallaxBannerLayer
           className='cloud large'
           translateX={[655, 700]}
-          translateY={[20, -50]}
+          translateY={[20, -100]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
