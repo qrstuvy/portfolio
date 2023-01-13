@@ -91,7 +91,7 @@ export default function Projects(){
                         <h2>Link Cable</h2>
                         <h3>A Dating App for Gamers</h3>
                         <div className='image-div'>
-                        <img className='project-img-top' src={linkcable1}></img>
+                        <img className='project-img-top' src={linkcable1} alt="Dating app image"></img>
                     </div>
                         <p>
                             <i className="devicon-react-original project-icon"></i>
@@ -117,7 +117,7 @@ export default function Projects(){
                         <h2>Astrologyx</h2>
                         <h3>An Astronomy App</h3>
                         <div className='image-div'>
-                        <img className='project-img-top' src={astrologyx1}></img>
+                        <img className='project-img-top' src={astrologyx1} alt="Astrology app image"></img>
                     </div>
                         <p>
                             <i className="devicon-react-original project-icon"></i>
@@ -144,7 +144,7 @@ export default function Projects(){
                         <h2>MedTracker</h2>
                         <h3>A Medication Tracker</h3>
                         <div className='image-div'>
-                        <img className='project-img-top' src={medtracker1}></img>
+                        <img className='project-img-top' src={medtracker1} alt="Medication tracker image"></img>
                     </div>
                         <p>
                             <i className="devicon-react-original project-icon"></i>
@@ -170,7 +170,7 @@ export default function Projects(){
                         <h2>Simon Things</h2>
                         <h3>A Classic Game</h3>
                         <div className='image-div'>
-                        <img className='project-img-top' src={simon1}></img>
+                        <img className='project-img-top' src={simon1} alt="Simon-game image"></img>
                     </div>
                         <p>
                             <i className="devicon-react-original project-icon"></i>
