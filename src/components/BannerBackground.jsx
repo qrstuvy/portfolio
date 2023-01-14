@@ -37,8 +37,8 @@ export default function BannerBackground ({ isNightMode }) {
             <ParallaxBannerLayer
               image={moon}
               className="moon-banner"
-              translateY={[30, -100]}
-              translateX={[10, 10]}
+              translateY={[10, -100]}
+              translateX={[30, 30]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
             />
