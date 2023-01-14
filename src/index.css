@@ -541,6 +541,7 @@ li {
     height: 200px;
     width: 450px;
     z-index: 200;
+    font-family: sans-serif;
   }
   
   .success-message {
