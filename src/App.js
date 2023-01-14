@@ -82,7 +82,7 @@ className="night-mode-button-off" onClick={handleNightModeClick}
           <SectionDivider />
           </div>
           <Contact />
-
+          <SectionDivider />
         </main>
       </div>
       <Footer />

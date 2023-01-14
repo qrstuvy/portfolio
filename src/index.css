@@ -626,8 +626,8 @@ a:hover{
   width: 300px;
   height: 200px;
   border-radius: 10px;
-  border-bottom: 1px solid #a4eaf6;
-  box-shadow: 1px 1px 10px #327a93;
+  border: 1px solid white;
+  box-shadow: 1px 1px 20px #ffffff;
 }
 
 .image-div img {
@@ -675,6 +675,32 @@ a:hover{
   transition-duration: 0.3s;
 }
 
+
+
+input, textarea {
+  background-color: transparent;
+  color: #327a93;
+  border: 1px solid white;
+  box-shadow: 1px 1px 20px #ffffff;
+  resize: none;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #327a93;
+}
+
+.contact-div, .contact-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.contact-text {
+  text-align: center;
+}
+
 .contact-form {
   margin-top: -20px;
   padding-top: 30px;
@@ -686,7 +712,11 @@ a:hover{
 }
 
 .message-field {
-  padding-bottom: 60px;
-  padding-right: 130px;
+  padding-bottom: 100px;
+  padding-right: 300px;
   z-index: 200;
+}
+
+.success-message {
+  text-align: center;
 }
