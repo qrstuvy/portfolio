@@ -28,10 +28,10 @@ export default function NavBar({ scrollToSection, skills, about, projects, conta
       <>
  <nav className={scrolled ? "top-navbar scrolled" : isNightMode ? "top-navbar-darkmode" : "top-navbar"}>
           <ul>
-            <li><a onClick={() => scrollToSection(about)}>about.</a></li>
-            <li><a onClick={() => scrollToSection(skills)}>skills.</a></li>
-            <li><a onClick={() => scrollToSection(projects)}>projects.</a></li>
-            <li><a onClick={() => scrollToSection(contact)}>contact.</a></li>
+            <li onClick={() => scrollToSection(about)}>about.</li>
+            <li onClick={() => scrollToSection(skills)}>skills.</li>
+            <li onClick={() => scrollToSection(projects)}>projects.</li>
+            <li onClick={() => scrollToSection(contact)}>contact.</li>
           </ul>
         </nav>
 
