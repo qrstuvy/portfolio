@@ -80,15 +80,15 @@ export default function BannerBackground ({ isNightMode }) {
         />
           <ParallaxBannerLayer
           className='cloud large'
-          translateX={[655, 700]}
+          translateX={[600, 700]}
           translateY={[20, -100]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
           <ParallaxBannerLayer
           className='cloud medium'
-          translateX={[75, 150]}
-          translateY={[230, -100]}
+          translateX={[100, 150]}
+          translateY={[260, -100]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
