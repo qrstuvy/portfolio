@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact () {
   const form = useRef();
@@ -32,7 +34,7 @@ export default function Contact () {
       <input type="email" name="email" placeholder='name@company.com*' className='email-field' required /><br />
       <label>Message</label><br />
       <textarea name="message" placeholder='Type Your Message Here*' className='message-field' required /><br /><br />
-      <button type="submit">Send</button>
+      <button type="submit"><FontAwesomeIcon icon={faPaperPlane} />Send</button>
       <div>
       { successful ? 
       

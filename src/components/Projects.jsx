@@ -32,7 +32,6 @@ export default function Projects(){
                             <button><FontAwesomeIcon icon={faCode} /> Code</button>
                         </a>
                     </div>
-               
 
 
 

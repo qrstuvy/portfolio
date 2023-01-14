@@ -107,14 +107,14 @@ export default function BannerBackground ({ isNightMode }) {
           <ParallaxBannerLayer
           className="main-parallax"
           image={layer1}
-          translateY={[2, -15]}
+          translateY={[2, -20]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
 
 <ParallaxBannerLayer
           image={layer3}
-          translateY={[100, 85]}
+          translateY={[100, 70]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />

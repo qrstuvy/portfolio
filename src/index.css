@@ -618,12 +618,7 @@ li {
   } 
 
   @media screen and (max-width: 390px) {
-
-  .skills-h2 {
-    margin-top: 100px;
-   }
-
-   .nav-icon-div { 
+  .nav-icon-div { 
     padding-left: 30px;
     background-color: rgba(255, 255, 255, 0.5);
     bottom: 0;
@@ -646,9 +641,9 @@ li {
   }
 
   .nav-icon {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: #327a93;
-    margin: 0 13px;
+    margin: 0 17px;
     transition: transform 0.2s ease-in-out;
   }
   
