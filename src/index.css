@@ -394,7 +394,7 @@ li {
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: -20px;
-  width: 75%;
+  width: 85%;
 }
 
 
@@ -431,7 +431,7 @@ li {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    z-index: 100;
+    z-index: 50;
     width: 70%
   }
   
@@ -560,12 +560,6 @@ li {
     margin-top: -10px;
   }
 
-  @media screen and (max-width: 780px) {
-    .skills-h2 {
-      margin-top: 100px;
-     }
-  }
-
   @media screen and (max-width: 600px) {
      .nav-icon-div { 
       padding-left: 120px;
@@ -612,7 +606,7 @@ li {
 
   .about-me-desc {
     color: #327a93;
-    width: 80%;
+    width: 90%;
     font-size: 1.5rem;
   }
 
@@ -676,6 +670,7 @@ li {
     margin-left: -35px;
     color: rgba(50, 122, 147, 0.7);
     animation: fade-in 0.3s;
+    z-index: 100;
   }
   
   .top-icon:hover {
@@ -683,17 +678,19 @@ li {
     color: rgba(255, 255, 255, 0.7);
   }
 
-  .about-me-desc {
-    color: #327a93;
-    width: 80%;
-    font-size: 1.5rem;
-  }
-  
 
 .message-field {
   height: 200px;
   width: 300px;
   z-index: 200;
+}
+
+.skill-text {
+  width: 85%;
+}
+
+.mobile-hide {
+  visibility: hidden;
 }
 
 }

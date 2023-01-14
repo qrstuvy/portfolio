@@ -48,7 +48,7 @@ export default function Skills(){
                 <p className="skills-icon-name">Bootstrap</p>
             </div>
         </div>
-        <p>
+        <p className="skill-text">
             ..And if it's not here, I'd be more than happy to learn it!
         </p>
     </>

@@ -23,7 +23,7 @@ export default function Contact () {
   return (
     <>
     <h2>Contact Me!</h2>
-    <p className='contact-text'>Have questions, suggestions, or comments?<br /> Feel free to leave me a message and I will get back to you as soon as possible!</p>
+    <p className='contact-text'>Have questions, suggestions, or comments?<br /><br /> Feel free to leave me a message and I will get back to you as soon as possible!</p>
     <div className='contact-div'>
     <form ref={form} onSubmit={sendEmail} className="contact-form">
       <label>Your Name</label><br />

@@ -37,8 +37,8 @@ export default function BannerBackground ({ isNightMode }) {
             <ParallaxBannerLayer
               image={moon}
               className="moon-banner"
-              translateY={[10, -100]}
-              translateX={[30, 30]}
+              translateY={[30, -100]}
+              translateX={[10, 10]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
             />
@@ -86,9 +86,9 @@ export default function BannerBackground ({ isNightMode }) {
           shouldAlwaysCompleteAnimation={true}
         />
           <ParallaxBannerLayer
-          className='cloud medium'
-          translateX={[100, 150]}
-          translateY={[260, -100]}
+          className='cloud medium mobile-hide'
+          translateX={[75, 150]}
+          translateY={[230, -100]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
