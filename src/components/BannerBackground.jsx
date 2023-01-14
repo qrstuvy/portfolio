@@ -5,7 +5,9 @@ import { faAnglesDown } from '@fortawesome/free-solid-svg-icons'
 import sun from '../images/sun.png'
 import moon from '../images/moon.png'
 import layer1 from '../images/1.png'
+import layer3 from '../images/3.png'
 import Sparkle from 'react-sparkle'
+import Home from './Home'
 
 
 export default function BannerBackground ({ isNightMode }) {
@@ -31,13 +33,14 @@ export default function BannerBackground ({ isNightMode }) {
 
     return (
       <header>
+        <Home isNightMode={isNightMode}/>
         <ParallaxBanner className='banner'>
         {
           isNightMode ? 
             <ParallaxBannerLayer
               image={moon}
               className="moon-banner"
-              translateY={[30, -100]}
+              translateY={[30, 300]}
               translateX={[10, 10]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
@@ -46,7 +49,7 @@ export default function BannerBackground ({ isNightMode }) {
             <ParallaxBannerLayer
               image={sun}
               className="sun-banner"
-              translateY={[0, -100]}
+              translateY={[0, 330]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
             />
@@ -58,7 +61,7 @@ export default function BannerBackground ({ isNightMode }) {
           <ParallaxBannerLayer
           className='cloud small'
           translateX={[70, 150]}
-          translateY={[50, -100]}
+          translateY={[50, 50]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
@@ -66,29 +69,29 @@ export default function BannerBackground ({ isNightMode }) {
 }
           <ParallaxBannerLayer
           className='cloud medium'
-          translateX={[255, 300]}
-          translateY={[50, -100]}
+          translateX={[255, 335]}
+          translateY={[50, 50]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
           <ParallaxBannerLayer
           className='cloud medium'
-          translateX={[655, 700]}
-          translateY={[150, -100]}
+          translateX={[655, 735]}
+          translateY={[150, 150]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
           <ParallaxBannerLayer
           className='cloud large'
-          translateX={[600, 700]}
-          translateY={[20, -100]}
+          translateX={[600, 680]}
+          translateY={[20, 20]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
           <ParallaxBannerLayer
           className='cloud medium mobile-hide'
-          translateX={[75, 150]}
-          translateY={[230, -100]}
+          translateX={[75, 155]}
+          translateY={[230, 230]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
@@ -107,10 +110,18 @@ export default function BannerBackground ({ isNightMode }) {
           <ParallaxBannerLayer
           className="main-parallax"
           image={layer1}
-          translateY={[2, -100]}
+          translateY={[2, -50]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
         />
+
+<ParallaxBannerLayer
+          image={layer3}
+          translateY={[100, 50]}
+          expanded={false}
+          shouldAlwaysCompleteAnimation={true}
+        />
+
           {
             showIcon ?
               <FontAwesomeIcon icon={faAnglesDown} className='scroll-down-icon' bounce />

@@ -59,8 +59,8 @@ className="night-mode-button-off" onClick={handleNightModeClick}
         <ParallaxProvider>
           <BannerBackground isNightMode={isNightMode}/>
         </ParallaxProvider>
+        {/* <Home isNightMode={isNightMode}/> */}
         <NavBar scrollToSection={scrollToSection} skills={skills} about={about} projects={projects} contact={contact} isNightMode={isNightMode}/>
-        <Home isNightMode={isNightMode}/>
 
         <main>
         <div className='divider-div' ref={about}>
