@@ -86,7 +86,7 @@ export default function BannerBackground ({ isNightMode }) {
           shouldAlwaysCompleteAnimation={true}
         />
           <ParallaxBannerLayer
-          className='cloud medium'
+          className='cloud medium mobile-hide'
           translateX={[75, 155]}
           translateY={[230, 230]}
           expanded={false}
