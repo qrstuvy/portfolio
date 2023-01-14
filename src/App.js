@@ -3,13 +3,13 @@ import './index.css';
 import BannerBackground from './components/BannerBackground'
 import { ParallaxProvider } from "react-scroll-parallax"
 import NavBar from './components/Navbar'
-import Home from './components/Home'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import SectionDivider from './components/SectionDivider'
+
 
 
 export default function App() {

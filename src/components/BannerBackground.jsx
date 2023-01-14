@@ -101,7 +101,7 @@ export default function BannerBackground ({ isNightMode }) {
   className="sparkle"
   fadeOutSpeed={0}
   newSparkleOnFadeOut={false}
-  count={50}
+  count={100}
   minSize={5}
   maxSize={8}
   flicker={true}
