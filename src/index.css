@@ -181,7 +181,8 @@ li {
 }
 
 .scrolled {
-  background:rgba(255, 255, 255, 0.9);
+  /* background:rgba(255, 255, 255, 0.9); */
+  background-color: #a4eaf6;
 }
 
 .top-navbar ul {
@@ -585,7 +586,7 @@ li {
 
   @media screen and (max-width: 600px) {
      .nav-icon-div { 
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: #a4eaf6;
       bottom: 0;
       width: 100%;
       display: flex;
@@ -597,7 +598,7 @@ li {
     }
   
     .nav-icon-div-darkmode { 
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: #a4eaf6;
       bottom: 0;
       width: 100%;
       display: flex;
@@ -653,7 +654,7 @@ li {
 
 
   @media screen and (max-width: 390px) {
-  .nav-icon-div { 
+  /* .nav-icon-div { 
     background-color: rgba(255, 255, 255, 0.9);
     bottom: 0;
     width: 100%;
@@ -675,7 +676,7 @@ li {
     justify-items: center;
     height: 60px;
     z-index: 600;
-  }
+  } */
 
   .nav-icon {
     font-size: 1.8rem;
