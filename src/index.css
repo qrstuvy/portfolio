@@ -181,7 +181,7 @@ li {
 }
 
 .scrolled {
-  background:rgba(255, 255, 255, 0.5);
+  background:rgba(255, 255, 255, 0.9);
 }
 
 .top-navbar ul {
@@ -585,7 +585,7 @@ li {
 
   @media screen and (max-width: 600px) {
      .nav-icon-div { 
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.9);
       bottom: 0;
       width: 100%;
       display: flex;
@@ -597,7 +597,7 @@ li {
     }
   
     .nav-icon-div-darkmode { 
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: rgba(255, 255, 255, 0.9);
       bottom: 0;
       width: 100%;
       display: flex;
@@ -654,7 +654,7 @@ li {
 
   @media screen and (max-width: 390px) {
   .nav-icon-div { 
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     bottom: 0;
     width: 100%;
     display: flex;
@@ -666,7 +666,7 @@ li {
   }
 
   .nav-icon-div-darkmode { 
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     bottom: 0;
     width: 100%;
     display: flex;
