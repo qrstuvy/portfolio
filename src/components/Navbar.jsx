@@ -35,13 +35,7 @@ export default function NavBar({ scrollToSection, skills, about, projects, conta
           </ul>
         </nav>
 
-        <div className=
-         {
-          isNightMode ? 
-        'nav-icon-div-darkmode'
-          :
-        'nav-icon-div'
-         }>
+        <div className={scrolled ? "nav-icon-div" : isNightMode ? "nav-icon-div-darkmode" : "nav-icon-div"}>
           <li>
         <a href='https://github.com/qrstuvy' target='_blank' rel='noopener noreferrer'>
         <svg
