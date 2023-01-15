@@ -34,7 +34,7 @@ export default function Contact () {
       <input type="email" name="email" placeholder='name@company.com*' className='email-field' required /><br />
       <label>Message</label><br />
       <textarea name="message" placeholder='Type Your Message Here*' className='message-field' required /><br /><br />
-      <button type="submit"><FontAwesomeIcon icon={faPaperPlane} />Send</button>
+      <button type="submit"><FontAwesomeIcon icon={faPaperPlane} /> Send</button>
       <div>
       { successful ? 
       

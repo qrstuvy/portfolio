@@ -176,7 +176,7 @@ li {
   justify-items: center;
   margin-top: -10px;
   height: 60px;
-  width: 100%;
+  width: 100vw;
   top: 0;
   right: 0;
   padding-right: 10px;
@@ -207,11 +207,14 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  justify-items: center;
+  margin-top: -10px;
+  height: 60px;
   width: 100vw;
   top: 0;
   right: 0;
   padding-right: 10px;
-  z-index: 2;
+  z-index: 400;
 }
 
 .top-navbar-darkmode ul {
