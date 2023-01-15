@@ -147,6 +147,12 @@ li {
   font-size: 1.5rem;
   position: absolute;
   z-index: 500;
+  top: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.night-mode-button-on:hover {
+  transform: translateY(-5px);
 }
 
 .night-mode-button-off {
@@ -154,6 +160,12 @@ li {
   font-size: 1.5rem;
   position: absolute;
   z-index: 500;
+  top: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.night-mode-button-off:hover {
+  transform: translateY(-5px);
 }
 
 .top-navbar {
@@ -573,23 +585,25 @@ li {
 
   @media screen and (max-width: 600px) {
      .nav-icon-div { 
-      padding-left: 120px;
       background-color: rgba(255, 255, 255, 0.5);
       bottom: 0;
       width: 100%;
       display: flex;
       flex-direction: row;
+      justify-content:space-evenly;
+      justify-items: center;
       height: 60px;
       z-index: 600;
     }
   
     .nav-icon-div-darkmode { 
-      padding-left: 120px;
       background-color: rgba(255, 255, 255, 0.5);
       bottom: 0;
       width: 100%;
       display: flex;
       flex-direction: row;
+      justify-content:space-evenly;
+      justify-items: center;
       height: 60px;
       z-index: 600;
     }
@@ -597,7 +611,7 @@ li {
     .nav-icon {
       font-size: 1.5rem;
       color: #327a93;
-      margin: 0 13px;
+      margin: 0 auto;
       transition: transform 0.2s ease-in-out;
     }
     
@@ -640,23 +654,25 @@ li {
 
   @media screen and (max-width: 390px) {
   .nav-icon-div { 
-    padding-left: 30px;
     background-color: rgba(255, 255, 255, 0.5);
     bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content:space-evenly;
+    justify-items: center;
     height: 60px;
     z-index: 600;
   }
 
   .nav-icon-div-darkmode { 
-    padding-left: 30px;
     background-color: rgba(255, 255, 255, 0.5);
     bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content:space-evenly;
+    justify-items: center;
     height: 60px;
     z-index: 600;
   }
@@ -665,6 +681,9 @@ li {
     font-size: 1.8rem;
     color: #327a93;
     margin: 0 17px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
     transition: transform 0.2s ease-in-out;
   }
   
