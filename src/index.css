@@ -610,6 +610,7 @@ li {
       flex-direction: row;
       justify-content:space-evenly;
       justify-items: center;
+      margin-bottom: -10px;
       height: 70px;
       z-index: 600;
     }
@@ -623,6 +624,7 @@ li {
       flex-direction: row;
       justify-content:space-evenly;
       justify-items: center;
+      margin-bottom: -10px;
       height: 70px;
       z-index: 600;
     }
