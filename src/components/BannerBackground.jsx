@@ -105,6 +105,8 @@ export default function BannerBackground ({ isNightMode }) {
           shouldAlwaysCompleteAnimation={true}
         />
 
+
+
 <ParallaxBannerLayer
           image={layer3}
           translateY={[100, 70]}
