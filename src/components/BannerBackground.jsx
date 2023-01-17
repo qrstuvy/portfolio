@@ -80,7 +80,7 @@ export default function BannerBackground ({ isNightMode }) {
         />
           <ParallaxBannerLayer
           className='cloud medium mac-screen'
-          translateX={[655, 735]}
+          translateX={[635, 715]}
           translateY={[150, 150]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}
