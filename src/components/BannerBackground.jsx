@@ -63,6 +63,13 @@ export default function BannerBackground ({ isNightMode }) {
           shouldAlwaysCompleteAnimation={true}
         />
 
+ <ParallaxBannerLayer
+          className='cloud small'
+          translateX={[30, 100]}
+          translateY={[400, 400]}
+          expanded={false}
+          shouldAlwaysCompleteAnimation={true}
+        />
 
           <ParallaxBannerLayer
           className='cloud medium'
@@ -72,8 +79,15 @@ export default function BannerBackground ({ isNightMode }) {
           shouldAlwaysCompleteAnimation={true}
         />
           <ParallaxBannerLayer
-          className='cloud medium'
+          className='cloud medium mac-screen'
           translateX={[655, 735]}
+          translateY={[150, 150]}
+          expanded={false}
+          shouldAlwaysCompleteAnimation={true}
+        />
+          <ParallaxBannerLayer
+          className='cloud medium'
+          translateX={[955, 1035]}
           translateY={[150, 150]}
           expanded={false}
           shouldAlwaysCompleteAnimation={true}

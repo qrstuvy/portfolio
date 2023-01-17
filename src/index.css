@@ -590,6 +590,16 @@ li {
     margin-top: -10px;
   }
 
+  .mac-screen {
+    visibility: hidden;
+  }
+
+  @media screen and (max-width: 1560px) {
+    .mac-screen {
+      visibility: visible;
+    }
+  }
+
   @media screen and (max-width: 1000px) {
     .name-field, .email-field {
       width: 80vw;
