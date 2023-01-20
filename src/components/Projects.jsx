@@ -47,7 +47,7 @@ export default function Projects(){
                         <i className="devicon-react-original project-icon"></i>
                         <i className="devicon-nodejs-plain project-icon"> </i>
                         </p>
-                        <a href='https://mighty-caverns-06129.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
+                        <a href='https://astrologyx.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
                             <button><FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Demo</button>
                         </a>
                         <a href='https://github.com/qrstuvy/astrologyx' target='_blank' rel='noopener noreferrer'>
@@ -70,7 +70,7 @@ export default function Projects(){
                         <i className="devicon-express-original project-icon"> </i>
                         <i className="devicon-nodejs-plain project-icon"> </i>
                         </p>
-                        <a href='https://boiling-tor-79260.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
+                        <a href='https://medtracker.herokuapp.com/' target='_blank' rel='noopener noreferrer'>
                             <button><FontAwesomeIcon icon={faArrowUpRightFromSquare} /> Demo</button>
                         </a>
                         <a href='https://github.com/qrstuvy/Medication-Tracker' target='_blank' rel='noopener noreferrer'>
