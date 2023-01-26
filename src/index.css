@@ -141,31 +141,15 @@ li {
   background: linear-gradient(to bottom,#192c5d, #596e78, #2a3551);
 }
 
-.night-mode-button-on {
+.dark-mode-toggle {
   color: #ffff9b;
-  font-size: 1.5rem;
   position: absolute;
   z-index: 500;
   top: 5px;
+  left: 5px;
   transition: transform 0.2s ease-in-out;
 }
 
-.night-mode-button-on:hover {
-  transform: translateY(-5px);
-}
-
-.night-mode-button-off {
-  color: #327a93;
-  font-size: 1.5rem;
-  position: absolute;
-  z-index: 500;
-  top: 5px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.night-mode-button-off:hover {
-  transform: translateY(-5px);
-}
 
 .top-navbar {
   position: fixed;
@@ -735,18 +719,3 @@ li {
     opacity: 0.7;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -29,11 +29,11 @@ export default function Contact () {
     <div className='contact-div'>
     <form ref={form} onSubmit={sendEmail} className="contact-form">
       <label>Your Name</label><br />
-      <input type="text" name="name" placeholder='Full Name*' className='name-field' required /><br />
+      <input type="text" name="name" placeholder='Your name' className='name-field' required /><br />
       <label>Your E-mail</label><br />
-      <input type="email" name="email" placeholder='name@company.com*' className='email-field' required /><br />
+      <input type="email" name="email" placeholder='Email address' className='email-field' required /><br />
       <label>Message</label><br />
-      <textarea name="message" placeholder='Type Your Message Here*' className='message-field' required /><br /><br />
+      <textarea name="message" placeholder='Type a message...' className='message-field' required /><br /><br />
       <button type="submit"><FontAwesomeIcon icon={faPaperPlane} /> Send</button>
       <div>
       { successful ? 

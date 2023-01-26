@@ -49,7 +49,7 @@ export default function BannerBackground ({ isNightMode }) {
             <ParallaxBannerLayer
               image={sun}
               className="sun-banner"
-              translateY={[0, 330]}
+              translateY={[20, 300]}
               expanded={false}
               shouldAlwaysCompleteAnimation={true}
             />
